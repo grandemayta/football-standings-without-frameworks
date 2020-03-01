@@ -9,7 +9,9 @@ class FootballStandings extends HTMLElement {
       return this.getAttribute('season');
     }
 
-    get key() { return this.getAttribute('key'); }
+    get key() {
+      return this.getAttribute('key');
+    }
 
     constructor() {
       super();
@@ -22,7 +24,6 @@ class FootballStandings extends HTMLElement {
 
     async render() {
       const standings = await getStandings(this.competition, this.season, this.key);
-      console.log(standings);
       this.shadowRoot.innerHTML = `
         <style>
           :host {
@@ -48,7 +49,7 @@ class FootballStandings extends HTMLElement {
             justify-content: var(--h1-position, center);
             padding: 0.5em;
             color: #fff;
-            background: #3F51B5;
+            background: #303F9F;
           }
 
           table { 
@@ -57,15 +58,24 @@ class FootballStandings extends HTMLElement {
           }
 
           table th, table td { 
-            text-align: left; 
+            text-align: left;
             padding: 0.9em 0;
+          }
+
+          table th {
+            color: #fff;
+            background: #3F51B5;
+          }
+          
+          table td {
+            color: #757575;
           }
 
           table th:first-child, table td:first-child, table th:last-child, table td:last-child {
             padding-left: 0.9em;
           }
 
-          table tr td { 
+          table td { 
             border-top: 1px solid #f0f0f0;
           }
 
@@ -74,8 +84,6 @@ class FootballStandings extends HTMLElement {
             height: 16px;
             vertical-align: middle;
           }
-
-          table tr:nth-child(even) {background: #f0f0f0}
 
           @media screen and (max-width: 500px) {
             .hide-cell {
