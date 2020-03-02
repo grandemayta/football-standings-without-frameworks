@@ -14,16 +14,6 @@ Football Standings is a cross platform widget that you can integrate in your Web
 ## Getting started
 To use our widget you need to enable a public key from [football-data](https://www.football-data.org/).
 
-## Available competitions
-| Key | Competition |
-| ------ | ------ |
-| SA | Serie A |
-| PL | Premier League |
-| PD | Liga |
-| BL1 | Bundesliga |
-| FL1 | Ligue |
-| DED | Eredivise |
-
 ## Customize the widget
 To customize the widget you can use the following css custom properties:
 
@@ -37,6 +27,17 @@ To customize the widget you can use the following css custom properties:
 | --table-border-color | TBD |
 | --table-color | TBD |
 | --table-background | TBD |
+
+## Available competitions
+
+| Key | Competition |
+| ------ | ------ |
+| SA | Serie A |
+| PL | Premier League |
+| PD | Liga |
+| BL1 | Bundesliga |
+| FL1 | Ligue |
+| DED | Eredivise |
 
 ## Integration
 
