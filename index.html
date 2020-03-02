@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Football Standings Web Component</title>
     <style>
-      :root {
-        --h1-position: center;
+      .theme-1 {
+        --header-position: center;
+        --header-color: #fff;
+        --header-background: #D32F2F;
+        --subheader-color: #fff;
+        --subheader-background: #F44336;
+        --table-border-color: 1px solid #f0f0f0;
+        --table-color: #757575;
+        --table-background: #fff;
+      }
+      .theme-2 {
+        --header-position: center;
+        --header-color: #fff;
+        --header-background: #388E3C;
+        --subheader-color: #fff;
+        --subheader-background: #4CAF50;
+        --table-border-color: 1px solid #f0f0f0;
+        --table-color: #757575;
+        --table-background: #fff;
       }
       body {
         background: #282828;
@@ -14,12 +31,8 @@
     </style>
 </head>
 <body>
-    <gm-football-standings 
-        competition="SA"
-        season="2019"
-        key="ffd61d87e73740c29dd389ea7619d5e1"
-        >
-    </gm-football-standings>
+    <gm-football-standings class="theme-1" competition="SA" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
+    <gm-football-standings class="theme-2" competition="PD" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
     <script type="module" src="index.js"></script>
 </body>
 </html>

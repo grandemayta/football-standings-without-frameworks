@@ -33,7 +33,7 @@ class FootballStandings extends HTMLElement {
             min-height: 100%;
             margin: 0 auto;
             font-size: 1.2em;
-            background-color: #fff;
+            background-color: var(--table-background, #fff);
             box-sizing: border-box;
           }
 
@@ -46,10 +46,10 @@ class FootballStandings extends HTMLElement {
           h1 {
             display: flex;
             width: 100%;
-            justify-content: var(--h1-position, center);
+            justify-content: var(--header-position, center);
             padding: 0.5em;
-            color: #fff;
-            background: #303F9F;
+            color: var(--header-color, #fff);
+            background: var(--header-background, #303F9F);
           }
 
           table { 
@@ -63,12 +63,12 @@ class FootballStandings extends HTMLElement {
           }
 
           table th {
-            color: #fff;
-            background: #3F51B5;
+            color: var(--subheader-color, #fff);
+            background: var(--subheader-background, #3F51B5);
           }
           
           table td {
-            color: #757575;
+            color: var(--table-color, #757575);
           }
 
           table th:first-child, table td:first-child, table th:last-child, table td:last-child {
@@ -76,7 +76,7 @@ class FootballStandings extends HTMLElement {
           }
 
           table td { 
-            border-top: 1px solid #f0f0f0;
+            border-top: var(--table-border-color, 1px solid #f0f0f0);
           }
 
           table tr td img {
