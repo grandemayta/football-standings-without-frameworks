@@ -1,38 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Football Standings Web Component</title>
-    <style>
-      .theme-1 {
-        --header-position: center;
-        --header-color: #fff;
-        --header-background: #D32F2F;
-        --subheader-color: #fff;
-        --subheader-background: #F44336;
-        --table-border-color: 1px solid #f0f0f0;
-        --table-color: #757575;
-        --table-background: #fff;
-      }
-      .theme-2 {
-        --header-position: center;
-        --header-color: #fff;
-        --header-background: #388E3C;
-        --subheader-color: #fff;
-        --subheader-background: #4CAF50;
-        --table-border-color: 1px solid #f0f0f0;
-        --table-color: #757575;
-        --table-background: #fff;
-      }
-      body {
-        background: #282828;
-      }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Football Standings Web Component</title>
+  <style>
+    body {
+      background: #282828;
+    }
+    .theme-red {
+      --header-background: #D32F2F;
+      --subheader-background: #F44336;
+    }
+    .theme-green {
+      --header-background: #388E3C;
+      --subheader-background: #4CAF50;
+    }
+  </style>
 </head>
 <body>
-    <gm-football-standings class="theme-1" competition="SA" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
-    <gm-football-standings class="theme-2" competition="PD" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
-    <script type="module" src="index.js"></script>
+  <gm-football-standings class="theme-red" competition="SA" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
+  <gm-football-standings class="theme-green" competition="PD" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
+  <gm-football-standings competition="PL" season="2019" key="ffd61d87e73740c29dd389ea7619d5e1"></gm-football-standings>
+  <script type="module" src="index.js"></script>
 </body>
 </html>

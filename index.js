@@ -99,8 +99,8 @@ class FootballStandings extends HTMLElement {
             <th class="hide-cell">W</th>
             <th class="hide-cell">D</th>
             <th class="hide-cell">L</th>
-            <th>PTS</th>
             <th class="hide-cell">GF</th>
+            <th>PTS</th>
           </tr>
           ${standings.standings[0].table.reduce((acc, standing) => {
             return `
@@ -115,8 +115,8 @@ class FootballStandings extends HTMLElement {
               <td class="hide-cell">${standing.won}</td>
               <td class="hide-cell">${standing.draw}</td>
               <td class="hide-cell">${standing.lost}</td>
-              <td>${standing.points}</td>
               <td class="hide-cell">${standing.goalsFor}</td>
+              <td>${standing.points}</td>
             </tr>
             `
           }, '')}
